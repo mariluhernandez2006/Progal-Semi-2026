@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="salud/salud.csproj" Id="fe64659b-bbe5-4ae7-bae4-4210978c88df">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+</Solution>
