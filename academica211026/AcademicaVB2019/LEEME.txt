@@ -1,0 +1,28 @@
+PROYECTO ACADÉMICO - VISUAL BASIC 2019 - WINDOWS FORMS
+
+1. Abre AcademicaVB2019.sln en Visual Studio 2019.
+2. Instala la carga de trabajo Desarrollo de escritorio con .NET y .NET Framework 4.8.
+3. Debes tener SQL Server LocalDB (MSSQLLocalDB) instalado.
+4. Ejecuta BaseDatos.sql en SQL Server Management Studio conectado a (LocalDB)\MSSQLLocalDB.
+5. Si tu servidor es otro, cambia Data Source en App.config.
+6. Ejecuta con F5. Usuario: USTR025826, clave: pastel#123.
+
+El diseño se genera por código en las clases de formularios: NO necesitas arrastrar controles.
+El código del proyecto de clase C# se convirtió a Visual Basic: conexión, DataSet, alumnos y materias.
+Se añadieron login y gestión de usuarios solicitados en el examen.
+
+AVISO: las contraseñas se guardan en texto plano para reproducir la estructura solicitada en el parcial. No usar en producción: en sistemas reales se deben almacenar hashes seguros.
+No se ha probado este proyecto dentro de Visual Studio ni con una instancia SQL Server real.
+
+CORRECCIONES 21/10/2026:
+- Se declaró nombreTabla en crearDs para evitar la colisión con el método tabla(sql).
+- Se declararon los índices de For y las variables de For Each (Option Explicit On).
+- Se ajustó la posición del panel de campos de frm_usuario.
+- Se conservaron los formularios, la base de datos y las operaciones originales.
+
+NOTA: No fue posible compilar ni ejecutar Visual Studio 2019 desde este entorno.
+En Visual Studio usa Compilar > Recompilar solución y revisa la Lista de errores.
+Para que el login funcione, ejecuta BaseDatos.sql en la instancia configurada en App.config.
+
+
+NOTA IMPORTANTE: Esta carpeta contiene una sola copia del proyecto. Abra AcademicaVB2019.sln de ESTA carpeta. No abra soluciones antiguas. Ejecute BaseDatos.sql en SQL Server LocalDB y luego Recompilar solución. La compilación no se ha verificado en Visual Studio 2019 desde este entorno.

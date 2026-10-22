@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F18E64D-2AF7-4B7B-9F64-3C66A30C5D11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AcademicaVB2019</RootNamespace>
+    <AssemblyName>AcademicaVB2019</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MyType>WindowsForms</MyType>
+    <StartupObject>AcademicaVB2019.Program</StartupObject>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineTrace>true</DefineTrace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_configuracion.Designer.vb">
+      <DependentUpon>frm_configuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_configuracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Conexion_base_datos.vb" />
+    <Compile Include="Ui.vb" />
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_alumnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_materias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="BaseDatos.sql" />
+    <None Include="LEEME.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_alumnos.resx">
+      <DependentUpon>frm_alumnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_configuracion.resx">
+      <DependentUpon>frm_configuracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_materias.resx">
+      <DependentUpon>frm_materias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_principal.resx">
+      <DependentUpon>frm_principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_usuario.resx">
+      <DependentUpon>frm_usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db974c68-625f-4e08-b920-29d528db164d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db974c68-625f-4e08-b920-29d528db164d1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
